@@ -5,7 +5,7 @@
   <meta name="description"
         content="soon">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>PGSR: Planar-based Gaussian Splatting for Efficient and High-Fidelity Surface Reconstruction</title>
+  <title>MVGSR: Multi-View Consistency Gaussian Splatting for Robust Surface Reconstruction</title>
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script> -->
@@ -53,51 +53,33 @@
     <div class="container is-max-desktop">
       <div class="columns is-centered">
         <div class="column has-text-centered">
-          <h1 class="title is-1 publication-title">PGSR: Planar-based Gaussian Splatting for Efficient and High-Fidelity Surface Reconstruction</h1>
+          <h1 class="title is-1 publication-title">MVGSR: Multi-View Consistency Gaussian Splatting for Robust Surface Reconstruction</h1>
           <div class="is-size-5 publication-authors">
             <span class="author-block">
-              <a href="">Danpeng Chen</a><sup>1,2</sup></span>&nbsp;&nbsp;
+              <a href="">Chenfeng Hou</a><sup>1</sup></span>&nbsp;&nbsp;
             <span class="author-block">
-              <a href="">Hai Li</a><sup>5</sup>&nbsp;&nbsp;
+              <a href="">Qi Xun Yeo</a><sup>2</sup>&nbsp;&nbsp;
             </span>
             <span class="author-block">
-              <a href="https://ywcmaike.github.io/">Weicai Ye</a><sup>1,3</sup>&nbsp;&nbsp;
+              <a href="">Mengqi Guo</a><sup>2</sup>&nbsp;&nbsp;
             </span>
             <span class="author-block">
-              <a href="">Yifan Wang</a><sup>3</sup>&nbsp;&nbsp;
+              <a href="">Yongxin Su</a><sup>1</sup>&nbsp;&nbsp;
             </span>
             <span class="author-block">
-              <a href=""> Weijian Xie</a><sup>1,4</sup>&nbsp;&nbsp;
+              <a href="">Yanyan Li</a><sup>2,†</sup>&nbsp;&nbsp;
             </span>
             <span class="author-block">
-              <a href="">Shangjin Zhai</a><sup>4</sup>&nbsp;&nbsp;
-            </span>
-            <br>
-            <span class="author-block">
-              <a href="">Nan Wang</a><sup>4</sup>&nbsp;&nbsp;
-            </span>
-            <span class="author-block">
-              <a href="">Haomin Liu</a><sup>4</sup>&nbsp;&nbsp;
-            </span>
-            <span class="author-block">
-              <a href="">Hujun Bao</a><sup>1</sup>&nbsp;&nbsp;
-            </span>
-            <span class="author-block">
-              <a href="">Guofeng Zhang</a><sup>1,&#9993;</sup>&nbsp;&nbsp;
+              <a href="">Gim Hee Lee</a><sup>2</sup>&nbsp;&nbsp;
             </span>
           </div>
 
           <div class="is-size-5 publication-authors">
-            <span class="author-block"><sup>1</sup>Zhejiang University</span>&nbsp;&nbsp;
-            <span class="author-block"><sup>2</sup>Tetras.AI</span>
-            <span class="author-block"><sup>3</sup>Shanghai AI Laboratory</span>
-            <span class="author-block"><sup>4</sup>SenseTime Research</span>
-            <span class="author-block"><sup>5</sup>RayNeo</span>
+            <span class="author-block"><sup>1</sup>Beihang University</span>&nbsp;&nbsp;
+            <span class="author-block"><sup>2</sup>National University of Singapore</span>
             <br>
             <span class="email-link">
-              <!-- <a href="mailto:maikeyeweicai@gmail.com">maikeyeweicai@gmail.com</a> -->
-              &nbsp;&nbsp;
-              <!-- <a href="mailto:tonghe90@gmail.com">tonghe90@gmail.com</a> -->
+              <!-- <a href="mailto:email@example.com">email@example.com</a> -->
             </span>
           </div>
 
@@ -105,7 +87,7 @@
             <div class="publication-links">
               <!-- PDF Link. -->
               <span class="link-block">
-                <a href="paper/pgsr.pdf"
+                <a href="paper/CVPR2025__MVGSR__Multi_View_Consistency_Gaussian_Splatting_for_Robust_Surface_Reconstruction__Copy_v1.pdf"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="fas fa-file-pdf"></i>
@@ -122,37 +104,17 @@
                   <span>arXiv</span>
                 </a>
               </span>
-              <!-- Video Link. -->
-              <!-- <span class="link-block">
-                <a href="https://www.youtube.com/watch?v=MrKrnHhk8IA"
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                      <i class="fab fa-youtube"></i>
-                  </span>
-                  <span>Video</span>
-                </a>
-              </span> -->
               <!-- Code Link. -->
               <span class="link-block">
-                <a href="https://github.com/zju3dv/PGSR"
+                <a href="https://github.com/MVGSR/MVGSR"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="fab fa-github"></i>
                   </span>
                   <span>Code</span>
-                  </a>
+                </a>
               </span>
-              <!-- Dataset Link. -->
-              <!-- <span class="link-block">
-                <a href="https://github.com/google/nerfies/releases/tag/0.1"
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                      <i class="far fa-images"></i>
-                  </span>
-                  <span>Data</span>
-                  </a> -->
             </div>
-
           </div>
         </div>
       </div>
@@ -161,24 +123,26 @@
 </section>
 
 <!-- teaser.png -->
-<!-- <section class="hero teaser">
+<section class="hero teaser">
   <div class="container is-max-desktop">
     <div class="hero-body">
-      <img id="teaser" height="100%" src="./static/images/teaser.png" alt="ND-SDF teaser."/>
+      <img id="teaser" height="100%" src="./static/images/liucheng1firstpage_2.pdf" alt="MVGSR."/>
       <p>
-        We present <b>ND-SDF</b>, a framework for high-fidelity 3D indoor surface reconstruction from multi-views. Shown above is an extracted mesh from ScanNet++.
+        We present <b>MVGSR</b>, a framework for surface reconstruction in scenes with distractors. The RGB inputs polluted by different types of objects are fed to 2DGS and
+        MVGSR methods. Compared to 2DGS, MVGSR shows robust mesh reconstruction and high-fidelity appearance
+        rendering performance.
       </p>
     </div>
   </div>
-</section> -->
+</section>
 
 <!-- Video -->
-<section class="section">
+<!-- <section class="section">
   <div class="container is-max-desktop">
     <h2 class="title is-3" style="text-align: center;">Videos</h2>
     <video controls width="100%" height="100%" src="./static/videos/final.mp4" type="video/mp4" autoplay muted loop playsinline></video> 
   </div>
-</section>
+</section> -->
 
 <section class="section">
   <div class="container is-max-desktop">
@@ -187,7 +151,9 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            Recently, 3D Gaussian Splatting (3DGS) has attracted widespread attention due to its high-quality rendering, and ultra-fast training and rendering speed. However, due to the unstructured and irregular nature of Gaussian point clouds, it is difficult to guarantee geometric reconstruction accuracy and multi-view consistency simply by relying on image reconstruction loss. Although many studies on surface reconstruction based on 3DGS have emerged recently, the quality of their meshes is generally unsatisfactory. To address this problem, we propose a fast planar-based Gaussian splatting reconstruction representation (PGSR) to achieve high-fidelity surface reconstruction while ensuring high-quality rendering. Specifically, we first introduce an unbiased depth rendering method, which directly renders the distance from the camera origin to the Gaussian plane and the corresponding normal map based on the Gaussian distribution of the point cloud, and divides the two to obtain the unbiased depth. We then introduce single-view geometric, multi-view photometric, and geometric regularization to preserve global geometric accuracy. We also propose a camera exposure compensation model to cope with scenes with large illumination variations. Experiments on indoor and outdoor scenes show that our method achieves fast training and rendering while maintaining high-fidelity rendering and geometric reconstruction, outperforming 3DGS-based and NeRF-based methods.
+            3D Gaussian Splatting (3DGS) has gained significant attention for its high-quality rendering capabilities, ultra-fast training, and inference speeds. 
+To address this challenge, we propose Multi-View Consistency Gaussian Splatting for the domain of Robust Surface Reconstruction (\textbf{MVGSR}), which takes advantage of lightweight Gaussian models and a \textcolor{red}{heuristics-guided distractor masking} strategy for robust surface reconstruction in non-static environments.
+Experimental results demonstrate that MVGSR achieves competitive geometric accuracy and rendering fidelity compared to the state-of-the-art surface reconstruction algorithms.
           </p>
         </div>
       </div>
@@ -197,19 +163,12 @@
       <div class="column is-four-fifths">
         <h2 class="title is-3">Method</h2>
         <div class="content has-text-justified">
-          <img src="./static/images/system.png"
+          <img src="./static/images/liuchengtu_v2.pdf "
                class="framework-image"
-               alt="PGSR overview."/>
+               alt="MVGSR overview."/>
           <p>
-              Compared to 3DGS, we achieve global consistency in geometry reconstruction while
-              maintaining similar rendering quality. Initially, we improve
-              the modeling of scene geometry attributes by compressing
-              3D Gaussians into a 2D flat plane representation, which
-              is used to generate plane distance and normal maps, and
-              subsequently converted into unbiased depth maps. We then
-              introduce single-view geometric, multi-view photometric, and
-              geometric consistency loss to ensure global geometry consistency. Additionally, the exposure compensation model further
-              improves reconstruction accuracy.
+            The detailed architecture of our MVGSR Framework. Images with distractors are fed to the system that makes use of multi-view
+            consistency Gaussian Splatting algorithm to achieve robust surface reconstruction for non-static environments.
           </p>
         </div>
       </div>
@@ -299,10 +258,16 @@
   <div class="container is-max-desktop content">
     <h2 class="title">BibTeX</h2>
     <pre><code>
-      @article{chen2024pgsr,
+      <!-- @article{chen2024pgsr,
         title={PGSR: Planar-based Gaussian Splatting for Efficient and High-Fidelity Surface Reconstruction},
         author={Danpeng Chen and Hai Li and Weicai Ye and Yifan Wang and Weijian Xie and Shangjin Zhai and Nan Wang and Haomin Liu and Hujun Bao and Guofeng Zhang},
           booktitle={arxiv preprint arxiv:2406.06521}, 
+          year={2024}
+      } -->
+      @article{hou2025MVGSR,
+        title={MVGSR: Multi-View Consistency Gaussian Splatting for Robust Surface Reconstruction},
+        author={Chenfeng Hou and Qi Xun Yeo and Mengqi Guo and Yongxin Su and Yanyan Li and Gim Hee Lee},
+          booktitle={arxiv preprint arxiv:}, 
           year={2024}
       }
       ```</code></pre>
