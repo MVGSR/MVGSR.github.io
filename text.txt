@@ -1,0 +1,76 @@
+<hr>
+<!-- Comparisons -->
+<section class="section">
+  <div class="container is-max-desktop">
+    <h2 class="title is-3" style="text-align: center;">Comparisons</h2>
+      <!-- DTU -->
+      <div class="content">
+        <h2 class="title is-4">DTU</h2>
+        <div class="button-container" id="btn1">
+          <button onclick="changeImages(event, 'cmp1','./static/images/cmp/2dgs/37_2dgs.png', './static/images/cmp/ours/37_ours.png')" class="cmp-button cmp-btn-checked">scan_37</button>
+          <button onclick="changeImages(event, 'cmp1','./static/images/cmp/2dgs/63_2dgs.png', './static/images/cmp/ours/63_ours.png')" class="cmp-button">scan_63</button>
+          <button onclick="changeImages(event, 'cmp1','./static/images/cmp/2dgs/65_2dgs.png', './static/images/cmp/ours/65_ours.png')" class="cmp-button">scan_65</button>
+          <button onclick="changeImages(event, 'cmp1','./static/images/cmp/2dgs/110_2dgs.png', './static/images/cmp/ours/110_ours.png')" class="cmp-button">scan_110</button>
+          <button onclick="changeImages(event, 'cmp1','./static/images/cmp/2dgs/114_2dgs.png', './static/images/cmp/ours/114_ours.png')" class="cmp-button">scan_114</button>
+        </div>
+        <div class="cmp-container" id="cmp1">
+            <div class="bottom">
+                <img src="./static/images/cmp/ours/37_ours.png"/>
+            </div>
+            <div class="top">
+                <img src="./static/images/cmp/2dgs/37_2dgs.png"/>
+            </div>
+            <div class="cmp-slider"></div>
+        </div>
+      </div>
+        
+      <br/>
+      <div class="image-container">
+        <h2 class="title is-4">More Results</h2>
+            <img style="width: 90%;" src="./static/images/all_dtu.png"/>
+            </object>
+      </div>
+
+      <br/>
+      <div class="image-container">
+            <img style="width: 80%;" src="./static/images/dtu_table.png"/>
+            </object>
+      </div>
+
+      <!-- Mip360 & TnT -->
+      <br/>
+      <div class="content">
+        <h2 class="title is-4">Mip360 & TnT</h2>
+        <div class="button-container" id="btn3">
+          <button onclick="changeImages(event, 'cmp2','./static/images/cmp/2dgs/bonsai_2dgs.png', './static/images/cmp/ours/bonsai_ours.png')" class="cmp-button cmp-btn-checked">Bonsai</button>
+          <button onclick="changeImages(event, 'cmp2','./static/images/cmp/2dgs/Caterpillar_2dgs.png', './static/images/cmp/ours/Caterpillar_ours.png')" class="cmp-button">Caterpillar</button>
+          <button onclick="changeImages(event, 'cmp2','./static/images/cmp/2dgs/counter_2dgs.png', './static/images/cmp/ours/counter_ours.png')" class="cmp-button">Counter</button>
+        </div>
+        <div class="cmp-container" id="cmp2">
+            <div class="bottom">
+                <img src="./static/images/cmp/ours/bonsai_ours.png"/>
+            </div>
+            <div class="top">
+                <img src="./static/images/cmp/2dgs/bonsai_2dgs.png"/>
+            </div>
+            <div class="cmp-slider"></div>
+        </div>
+      </div>
+    
+      <br/>
+      <div class="image-container">
+        <h2 class="title is-4">More Results</h2>
+        <img style="width: 80%;" src="static/images/more_results.png"/>
+            </object>
+      </div>
+
+      <br/>
+      <div class="image-container">
+            <img style="width: 60%;" src="./static/images/tnt_table.png"/>
+            </object>
+      </div>
+
+    </div>
+  <script src="./static/js/comparison.js"></script>
+  </div>
+</section>
