@@ -29,6 +29,7 @@
   <link rel="stylesheet" href="./static/css/index.css">
   <link rel="stylesheet" href="./static/css/comparison.css">
   <!-- <link rel="icon" href="./static/images/favicon.svg"> -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
 
   <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
   <script defer src="./static/js/fontawesome.all.min.js"></script>
@@ -95,6 +96,7 @@
                   <span>Paper</span>
                 </a>
               </span>
+              <!-- arxiv Link. -->
               <span class="link-block">
                 <a href="https://arxiv.org/abs/2503.08093"
                    class="external-link button is-normal is-rounded is-dark">
@@ -112,6 +114,17 @@
                       <i class="fab fa-github"></i>
                   </span>
                   <span>Code</span>
+                </a>
+              </span>
+
+              <!-- 新增的Data Link -->
+              <span class="link-block">
+                <a href="https://github.com/MVGSR/MVGSR"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-database"></i> <!-- 使用Font Awesome的数据库图标 -->
+                  </span>
+                  <span>Data</span>
                 </a>
               </span>
             </div>
@@ -182,12 +195,53 @@
           <p>
             when there are viewpoint-dependent distractors, 3DGS-based surface reconstruction algorithms may model them as artifacts clustered in front of the camera lens or as viewpoint-dependent color representations attached to the object’s surface
           </p>
-          <!-- <img src="./static/images/liucheng1firstpage_3.png"
+     
+          <hr>
+          <img src="./static/images/tntcompares_v3.png"
+               class="framework-image"
+               alt="MVGSR compare1."/>
+          <img src="./static/images/tntmore.png"
+               class="framework-image"
+               alt="MVGSR compare1."/>
+          <img src="./static/images/table_tnt.png"
+               class="framework-image"
+               alt="MVGSR compare1."/>
+     
+          <p>
+            In TnT-Robust dataset, MVGSR achieves the best reconstruction results. (TnT-robust is based on the TnT dataset with the addition of random distractors, please read the paper for details)
+          </p>
+
+     
+          <hr>
+          <img src="./static/images/fig_dtu_vis.png"
+               class="framework-image"
+               alt="MVGSR compare1."/>
+          <img src="./static/images/fig_compare_dtu-robust_mesh.png"
                class="framework-image"
                alt="MVGSR compare1."/>
           <p>
-            when there are viewpoint-dependent distractors, 3DGS-based surface reconstruction algorithms may model them as artifacts clustered in front of the camera lens or as viewpoint-dependent color representations attached to the object’s surface
-          </p> -->
+            In DTU-Robust dataset, MVGSR achieves the best reconstruction results. (DTU-robust is based on the DTU dataset with the addition of random distractors, please read the paper for details)
+          </p>
+          <img src="./static/images/table_dtu_all_1.png"
+          class="framework-image"
+          alt="MVGSR compare1."/>
+          <img src="./static/images/table_dtu_all_2.png"
+          class="framework-image"
+          alt="MVGSR compare1."/>
+      
+          <hr>
+          <img src="./static/images/mask2.png"
+               class="framework-image"
+               alt="MVGSR compare1."/>
+          <img src="./static/images/robustnerf_onthego.png"
+               class="framework-image"
+               alt="MVGSR compare1."/>
+          <p>
+            In onthego dataset, MVGSR achieves the best reconstruction results. 
+          </p>
+          <img src="./static/images/table_onthego.png"
+          class="framework-image"
+          alt="MVGSR compare1."/>
 
         </div>
       </div>
